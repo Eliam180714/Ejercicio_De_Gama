@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 100px;
+    height: 100vh;
+    background-color: #333; 
+    padding-top: 20px;
+    position: fixed;
+    transition: width 0.3s; 
+  }
+  
+  .sidebar:hover {
+    width: 150px; 
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    border: 2px solid #fff; 
+    background-color: #000; 
+    margin: 0 auto; 
+    display: block; 
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s; 
+  }
+  
+  .profile-img:hover {
+    width: 90px; 
+    height: 90px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+    transform: scale(1.1); 
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px; 
+    transition: box-shadow 0.3s, margin-bottom 0.3s; 
+  }
+  
+  li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .menu-img {
+    display: block; /* Asegura que las imágenes no tengan espacios adicionales */
+    width: 30px; /* Tamaño normal de las imágenes del menú */
+    height: 30px; /* Tamaño normal de las imágenes del menú */
+    margin-left: 5px; /* Despegue de las imágenes del borde del menú */
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s; /* Agregar transición */
+  }
+  
+  .menu-img:hover {
+    width: 40px; /* Tamaño grande al pasar el mouse */
+    height: 40px; /* Tamaño grande al pasar el mouse */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombreado al pasar el mouse */
+  }
+  
+  .content {
+    margin-left: 150px; /* Ancho del menú expandido */
+    padding: 20px;
+  }
+
+  .employees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #444; /* Color de fondo de la tabla */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  .employees-table th, .employees-table td {
+    border: 1px solid #fff; /* Borde blanco */
+    padding: 8px;
+  }
+  
+  .employees-table th {
+    background-color: #666; /* Color de fondo para las celdas de encabezado */
+  }
+  
+  .employees-table td {
+    background-color: #555; /* Color de fondo para las celdas de datos */
+  }
+
+
+
+
+
+
+  .search-box {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+    border-color: #666;
+  }

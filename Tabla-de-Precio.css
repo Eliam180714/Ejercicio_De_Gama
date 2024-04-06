@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color de texto blanco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 100px;
+    height: 100vh;
+    background-color: #333; /* Cambiar al color de fondo deseado */
+    padding-top: 20px;
+    position: fixed;
+    transition: width 0.3s; /* Transición al pasar el mouse */
+  }
+  
+  .sidebar:hover {
+    width: 150px; /* Ancho más grande al pasar el mouse */
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img {
+    width: 80px; /* Tamaño más grande */
+    height: 80px; /* Tamaño más grande */
+    border-radius: 50%; /* Hace la imagen completamente redonda */
+    border: 2px solid #fff; /* Borde blanco */
+    background-color: #000; /* Color de fondo negro */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s; /* Agregar transición */
+  }
+  
+  .profile-img:hover {
+    width: 90px; /* Tamaño más grande al pasar el mouse */
+    height: 90px; /* Tamaño más grande al pasar el mouse */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombreado al pasar el mouse */
+    transform: scale(1.1); /* Agrandar la imagen al pasar el mouse */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px; /* Aumenta el espacio entre las opciones */
+    transition: box-shadow 0.3s, margin-bottom 0.3s; /* Agrega una transición suave al sombreado y al margen */
+  }
+  
+  li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombreado cuando se pasa el mouse */
+  }
+  
+  .menu-img {
+    display: block; /* Asegura que las imágenes no tengan espacios adicionales */
+    width: 30px; /* Tamaño normal de las imágenes del menú */
+    height: 30px; /* Tamaño normal de las imágenes del menú */
+    margin-left: 5px; /* Despegue de las imágenes del borde del menú */
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s; /* Agregar transición */
+  }
+  
+  .menu-img:hover {
+    width: 40px; /* Tamaño grande al pasar el mouse */
+    height: 40px; /* Tamaño grande al pasar el mouse */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombreado al pasar el mouse */
+  }
+  
+  .content {
+    margin-left: 150px; /* Ancho del menú expandido */
+    padding: 20px;
+  }
+
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+  }
+  
+  th, td {
+    padding: 6px; /* Se redujo el padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #222; /* Gris oscuro */
+  }
+  
+  .recomendado, .destacado {
+    background-color: #444; /* Gris */
+    transition: background-color 0.3s ease, transform 0.1s; /* Transición para cambio de color y transformación */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el ratón */
+  }
+  
+  .recomendado:hover, .destacado:hover {
+    background-color: #555; /* Gris más oscuro */
+    transform: translateY(2px); /* Desplaza ligeramente hacia abajo al pasar el ratón */
+  }
